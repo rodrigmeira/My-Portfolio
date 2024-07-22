@@ -43,12 +43,12 @@ const about = {
       fieldValue: "2 years",
     },
     {
-      fieldName: "Nationality ",
-      fieldValue: "Brazilian",
-    },
-    {
       fieldName: "Email ",
       fieldValue: "meiramusic@outlook.com",
+    },
+    {
+      fieldName: "Nationality ",
+      fieldValue: "Brazilian",
     },
     {
       fieldName: "Freelance ",
@@ -65,7 +65,7 @@ const experience = {
   icon: "/Assets/resume/badge.png",
   title: "Experience",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, mollitia. Reiciendis, animi!",
+    "Experienced in developing fullstack applications with a focus on creating robust and scalable solutions for diverse industries.",
   items: [
     {
       company: "Escola DNC",
@@ -84,7 +84,7 @@ const education = {
   icon: "/Assets/resume/cap.png",
   title: "Education",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, mollitia. Reiciendis, animi!",
+    "A dedicated learner with a strong foundation in systems development and fullstack development, continuously enhancing my skills through formal education and practical experience.",
   items: [
     {
       institution: "Universidade Estácio de Sá",
@@ -102,7 +102,7 @@ const education = {
 const skills = {
   title: "Skills",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, mollitia. Reiciendis, animi!",
+    "Proficient in a variety of programming languages and frameworks, with a focus on building scalable and efficient applications.",
   skillsList: [
     {
       icon: <FaHtml5 />,
@@ -181,7 +181,7 @@ const Resume = () => {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-justify text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -211,7 +211,7 @@ const Resume = () => {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-justify text-white/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -242,7 +242,7 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="text-white/60 max-w-[600px] mx-auto xl:mx-0">
+                  <p className="text-white/60 max-w-[600px] text-justify mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
@@ -274,14 +274,17 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="text-white/60 max-w-[600px] mx-auto xl:mx-0">
+                <p className="text-white/60 text-justify max-w-[600px] mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
-                      <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
-                        <span className="text-white/60">{item.fieldName}</span>
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-accent">{item.fieldName}</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>
                     );
