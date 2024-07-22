@@ -13,6 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
+  icon: "/favicon.ico",
   title: "Portfol.io",
   description: "My portfolio",
 };
