@@ -10,28 +10,28 @@ const services = [
     title: "Web Development",
     description:
       "Developing websites that serve as powerful marketing tools and bricks to engage your audience.",
-    href: "",
+    href: "/contact",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
       "Building a product from concept to completion is what I do best. I help to bring your vision to life.",
-    href: "",
+    href: "/contact",
   },
   {
     num: "03",
     title: "Mobile App Development",
     description:
       "Creating responsive and high-performing mobile applications for both iOS and Android platforms.",
-    href: "",
+    href: "/contact",
   },
   {
     num: "04",
     title: "API Integration",
     description:
       "Seamlessly integrating third-party APIs to enhance functionality and improve the applications efficiency.",
-    href: "",
+    href: "/contact",
   },
 ];
 
