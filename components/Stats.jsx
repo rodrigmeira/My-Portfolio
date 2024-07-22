@@ -41,7 +41,7 @@ const Stats = () => {
                   end={item.num}
                   duration={5}
                   delay={2}
-                  className="text-2xl xl:text-6xl font-extrabold"
+                  className="text-xl xl:text-6xl font-extrabold"
                 />
 
                 <p
