@@ -68,9 +68,15 @@ const experience = {
     "Experienced in developing fullstack applications with a focus on creating robust and scalable solutions for diverse industries.",
   items: [
     {
+      company: "X Software House",
+      position: "Software Developer Intern",
+      duration: "2024 - Present",
+    },
+    {
       company: "Escola DNC",
       position: "Front-end Developer",
-      duration: "2022 - Present",
+      duration: "2022 - 2024",
+      ended: true,
     },
     {
       company: "Freelance",
@@ -197,8 +203,16 @@ const Resume = () => {
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
-                            <span className="w-[7px] h-[7px] rounded-full animate-ping absolute inline-flex bg-accent opacity-75"></span>
-                            <span className="w-[7px] h-[7px] rounded-full bg-accent"></span>
+                            <span
+                              className={`w-[7px] h-[7px] rounded-full animate-ping absolute inline-flex ${
+                                item.ended ? "bg-red-500" : "bg-accent"
+                              } opacity-75`}
+                            ></span>
+                            <span
+                              className={`w-[7px] h-[7px] rounded-full ${
+                                item.ended ? "bg-red-500" : "bg-accent"
+                              }`}
+                            ></span>
                             <p className="text-white/60">{item.company}</p>
                           </div>
                         </li>
